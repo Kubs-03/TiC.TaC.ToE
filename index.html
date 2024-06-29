@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC|Roboto' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1> Tic Tac Toe </h1>
+        <div class="game-container">
+            <div class="grid">
+                <div class="cell" id="cell0"></div>
+                <div class="cell" id="cell1"></div>
+                <div class="cell" id="cell2"></div>
+                <div class="cell" id="cell3"></div>
+                <div class="cell" id="cell4"></div>
+                <div class="cell" id="cell5"></div>
+                <div class="cell" id="cell6"></div>
+                <div class="cell" id="cell7"></div>
+                <div class="cell" id="cell8"></div>
+                <div class="line horizontal" id="line1"></div>
+                <div class="line horizontal" id="line2"></div>
+                <div class="line vertical" id="line3"></div>
+                <div class="line vertical" id="line4"></div>
+
+            </div>
+            <div class="side-menu">
+                <h2>Current Player</h2>
+                <div id="currentPlayer">Player 1 (X)</div>
+                <div id="winnerDisplay"></div>
+                <button id="playAgain">Play Again</button>
+                <button id="playWithPC">Play with PC</button>
+                <button id="soundControl">
+                    <img id="soundIcon" src="soundplay.png" alt="Sound On" />
+                </button>
+                <audio id="backgroundMusic" src="African_fun_long.mp3" loop autoplay></audio>
+            </div>
+         
+        </div>
+    </div>
+    <div id="countdownDisplay">
+        <div id="countdown"></div>
+    </div>
+    <audio id="winnerAudio" src="zapsplat_multimedia_alert_mallet_and_chime_complete_001_63856.mp3"></audio>
+    
+</body>
+</html>

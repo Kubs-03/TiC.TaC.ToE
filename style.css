@@ -1,0 +1,193 @@
+* {
+    font-family: 'Amatic SC';
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(242, 245, 244);
+    padding: 5px;
+    width: 500px;
+    position: relative;
+}
+
+.cell {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(235, 235, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cell:hover {
+    /* box-shadow: 10px 8px 10px black ; */
+    box-shadow: 11px 8px rgb(4, 4, 4) inset;
+    border-bottom: black dotted 2px;
+    border-right: black dotted 2px;
+    /* box-shadow: 10px 8px black ; */
+    /* border:1px black solid; */
+    border-radius: 10px 20px 10px 25px;
+}
+
+.line {
+    position: absolute;
+    background-color: black;
+}
+
+.horizontal {
+    width: 80%;
+    height: 2px;
+}
+
+.vertical {
+    width: 3px;
+    height: calc(100% - 120px);
+}
+
+#line1 {
+    top: 162px;
+    left: 50px;
+}
+
+#line2 {
+    top: 335px;
+    left: 50px;
+}
+
+#line3 {
+    top: 60px;
+    left: 163px;
+}
+
+#line4 {
+    top: 60px;
+    left: 335px;
+}
+
+.side-menu {
+    margin-left: 20px;
+    padding: 15px;
+    width: 20%;
+    background-color: rgb(182, 234, 215);
+    box-shadow: 1px 1px 5px 3px rgb(234, 232, 232);
+    border-radius: 10px;
+}
+
+.side-menu h2 {
+    font-size: 30px;
+    background-color: rgb(182, 234, 215);
+}
+
+#currentPlayer {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    /* background-color: rgb(182, 234, 215); */
+}
+
+
+#winnerDisplay {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #333;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+#winnerDisplay.show {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #fff;
+}
+
+
+#playAgain,
+#playWithPC {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: bisque;
+    color: black;
+    border: solid 2px black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#playAgain:hover {
+    font-weight: bolder;
+    box-shadow: 6px 6px black;
+}
+
+#playWithPC:hover {
+    font-weight: bolder;
+    box-shadow: 6px 6px black;
+}
+
+#countdownDisplay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+    display: none; /* Initially hidden */
+}
+
+#countdown {
+    font-size: 100px;
+    background-color: rgba(0, 0, 0, 0.005); 
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+}
+
+#soundControl {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#soundControl img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
